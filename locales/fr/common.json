@@ -1,0 +1,14 @@
+{
+  "title": "pirivod",
+  "layout": {
+    "navigation": {
+      "play": "Joue",
+      "sign-in": "Connexion",
+      "sign-up": "Créer un compte"
+    },
+    "language-name": "Langue :",
+    "language-name-fr": "Français",
+    "language-name-en": "English",
+    "language-name-ru": "Русский"
+  }
+}

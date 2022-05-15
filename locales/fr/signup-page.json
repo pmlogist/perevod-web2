@@ -1,0 +1,9 @@
+{
+  "name": "Nom",
+  "username": "Nom d'utilisateur",
+  "email": "Adresse mail",
+  "password": "Mot de passe",
+  "layout": {
+    "title": "Inscription"
+  }
+}

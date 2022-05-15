@@ -1,0 +1,73 @@
+@use "@/styles/mq";
+@use "@/styles/mixins";
+
+.mainLayout {
+  height: 100%;
+  .mainContent {
+    height: 100%;
+    padding-top: 50px;
+  }
+}
+
+.authLayout {
+  @include mixins.h-screen;
+  display: flex;
+  @include mq.mq($from: tablet) {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+  }
+
+  .sideContent {
+    display: none;
+    background-color: var(--primary);
+    @include mq.mq($from: tablet) {
+      border-right: 1px solid var(--bg-darker);
+      display: grid;
+      grid-template-columns: 50% 1fr;
+    }
+  }
+
+  .mainContent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* Sidebar layout */
+.sidebar_layout__wrapper {
+  display: grid;
+  height: 100%;
+  overflow: hidden;
+  grid-template-columns: 1fr;
+  @include mq.mq($from: desktop) {
+    grid-template-columns: 40px 1fr;
+  }
+  @include mq.mq($from: wide) {
+    grid-template-columns: 240px 1fr;
+  }
+}
+
+.sidebar_layout_container {
+  position: relative;
+  background: var(--bg);
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  display: none;
+
+  @include mq.mq($from: desktop) {
+    display: block;
+  }
+}
+
+.sidebar_layout_sidebar {
+  font-weight: 600;
+}
+
+.sidebar_layout__page {
+  overflow: scroll;
+}
+
+.authLayout {
+  height: 100%;
+}

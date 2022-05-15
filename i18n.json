@@ -1,0 +1,9 @@
+{
+  "locales": ["en", "fr", "ru"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common"],
+    "/": ["home-page"],
+    "/signup": ["signup-page"]
+  }
+}
